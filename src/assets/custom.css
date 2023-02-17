@@ -1,0 +1,151 @@
+#main {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+/* Dropdown styling start */
+.dropdown-wrapper{
+  max-width: 140px;
+  position:relative;
+  margin: 0 auto;
+}
+
+.selected-item{
+  height: 40px;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: felx;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.dropdown-popover{
+  max-width: 300px;
+  position: relative;
+  border: 2px solid lightgray;
+  top: 46px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  max-width: 100%;
+  padding: 10px;
+}
+input{
+  width: 90%;
+  height: 30px;
+  border: 2px solid lightgray;
+  font-size: 16px;
+  padding-left: 8px;
+  border-radius: 16px;
+}
+.options{
+  width: 100%;
+}
+
+.options ul{
+  list-style: none;
+  text-align: left;
+  padding-left: 8px;
+  max-height: 200px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: 2px solid lightgray;
+}
+
+.options li{
+  width: 100%;
+  border-bottom: 2px solid lightgray;
+  padding: 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+
+
+
+/* Dropdown styling end */
+.day {
+  background: linear-gradient(to bottom left, #d7d3ac, #ffffff);
+}
+.night {
+  background: linear-gradient(to bottom left, #4854a2, #3d3d3d);
+  color: white;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.form-rounded {
+  border-radius: 2rem;
+}
+.back-card {
+  border-radius: 40px !important;
+  color: white;
+  background: linear-gradient(to bottom right, #707070, #434647);
+  text-shadow: 2px 2px 2px #707070;
+  background-image: url(day.png);
+}
+
+.city-name {
+  position: absolute;
+  width: 100%;
+}
+
+.city-name p {
+  font-weight: 400;
+  font-size: 16pt;
+}
+
+.city-name span {
+  position: relative;
+  top: -50px;
+  font-size: 40pt;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.temp span {
+  font-weight: 100;
+  font-size: 5em;
+  letter-spacing: -5px;
+  white-space: nowrap;
+}
+.card-mid {
+  line-height: 0.5;
+}
+.condition {
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: capitalize;
+}
+
+.high {
+  font-size: 15px;
+}
+
+.low {
+  font-size: 15px;
+}
+
+.card-bottom p {
+  font-size: 50px;
+  font-weight: 100;
+  letter-spacing: -3px;
+}
+.card-bottom {
+  line-height: 0.5;
+}
+
+.card-bottom span {
+  font-size: 12px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: inherit;
+}
