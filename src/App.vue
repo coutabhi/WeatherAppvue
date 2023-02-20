@@ -3,17 +3,19 @@
 <template>
   
   <div id="main" :class="isDay ? 'day' : 'night'">
-    <div class="container my-5" style="max-width: 400px; min-width: 360px">
-      <h1 class="title text-center">Weather in {{ weather.cityName }}</h1>
+    <div class="container my-5" style="max-width: 500px; min-width: 360px">
+      <h1 class="main-head">Weather in {{ weather.cityName }}</h1>
       <form class="search-location" v-on:submit.prevent="getWeather">
           <input
+          
             type="text"
             class="form-control text-muted form-rounded p-4 shadow-sm"
-            placeholder="Please type city name."
+            placeholder="  Please type city name."
             v-model="citySearch"
             autocomplete="off"
           />
       </form> 
+      
       <!-- This section for dropdown where i stuck in creating list in dropdown -->
       <section class="dropdown-wrapper">
         <div v-on:click="isVisible = !isvisible" class="selected-item">
@@ -97,7 +99,7 @@
 </template>
  
 <script>
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 export default {
   data() {
     return {
